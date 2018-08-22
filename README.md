@@ -1,2 +1,2 @@
 # SMG2S.github.io
-SMG2S website
+This is SMG2S website
