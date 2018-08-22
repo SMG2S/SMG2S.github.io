@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SMG2S - Interface</title>
+
+        <!-- CSS -->        
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_perso.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+    
+        <!-- Top content -->
+        <div class="top-content">
+        
+            <!-- Top menu -->
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">SMG2S</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="top-navbar-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="firststep.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installation<span class="caret"></span></a>
+                                <ul class="dropdown-menu" color="Black">
+                                    <li><a href="startSMG2S.html">Start with SMG2S</a></li>
+                                    <li><a href="startGUI.html">Start with the GUI</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="howtouse.html">Tutorials</a></li>
+                            <li><a href="verification.html">Verification</a></li>                            
+                            <li><a href="example.html">Interface</a></li>
+                            <li><a href="project.html">Contact us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a class="btn btn-link-3" href="download.html">Download</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Features -->
+        <div class="features-container section-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 features section-description">
+                        <h2>Interface</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>We created interfaces in 4 different programming languages, you can click for know how use it </p>     
+                    <div class="col-sm-3">
+                        <div class="list-group">
+                            <a href="#intC" class="list-group-item list-group-item-action" class="list-group-item list-group-item-action disabled">Interface to C</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="list-group">
+                            <a href="#intPython" class="list-group-item list-group-item-action" class="list-group-item list-group-item-action">Interface to Python</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="list-group">
+                            <a href="#intPETSc" class="list-group-item list-group-item-action" class="list-group-item list-group-item-action">Interface to PETSc</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="list-group">
+                            <a href="#intTrilinos" class="list-group-item list-group-item-action">Interface to Trilinos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 features section-description">
+                        <h3 id="intC">Interface to C</h3>
+                    </div>
+                </div>
+
+
+                <div class="row row-centered">
+                    <div class="col-sm-12" style = " padding-left: 20%; padding-right: 20%">
+                        <p align="left">SMG2S install command will generate a shared library libsmg2s.so into <code>${INSTALL_DIRECTORY}/lib</code>. It can be used to profit the C wrapper of SMG2S. The compile command for C codes using SMG2S : </p>
+
+
+                        <p align="left">Include header file:</p>
+
+<pre align="left"><code>#include &ltinterface/C/c_wrapper.h&gt</code></pre>
+
+                        <p align="left">create Nilpotency object : </p>
+
+<pre align="left"><code>struct NilpotencyInt *n;
+n = newNilpotencyInt();
+NilpType1(n, 2, 10);</code></pre>
+
+                        <p align="left"> After that, you need to create the parallel Sparse Matrix Object Mt like this : </p>
+
+<pre align="left"><code>struct parMatrixSparseDoubleInt *m;
+m = newParMatrixSparseDoubleInt();</code></pre>
+
+                        <p align="left">Generate by SMG2S : </p>
+
+<pre align="left"><code>smg2s(m, 10, n, 3 ," ",MPI_COMM_WORLD);</code></pre>
+                        <p align="left">GRelease Nilpotency Object and parMatrixSparse Object : </p>
+
+<pre align="left"><code>ReleaseNilpotencyInt(&n);
+ReleaseParMatrixSparseDoubleInt(&m);</code></pre>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 features section-description">
+                            <h3 id="intPython">Interface to Python</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12" style = " padding-left: 20%; padding-right: 20%">
+                        <p align="left">Generate the shared library and install the python module of smg2s</p>
+
+<pre align="left"><code>cd ./interface/python;
+mpicxx -fpic -c smg2s_wrap.cxx  -I/apps/python/3/include/python3.5m -std=c++0x
+mpicxx -shared smg2s_wrap.o -o _smg2s.so
+python setup.py install
+</code></pre>
+                        <p align="left">Before the utilisation, make sure that mpi4py installed.</p>
+                        <p align="left">A little example of usge : </p>
+
+<pre align="left"><code>from mpi4py import MPI
+import smg2s
+import sys
+
+size = MPI.COMM_WORLD.Get_size()
+rank = MPI.COMM_WORLD.Get_rank()
+name = MPI.Get_processor_name()
+
+sys.stdout.write(
+    "Hello, World! I am process %d of %d on %s.\n"
+    % (rank, size, name))
+
+if rank == 0:
+        print ('INFO ]> Starting ...')
+        print("INFO ]> The MPI Comm World Size is %d" %size)
+
+#bandwidth for the lower band of initial matrix
+lbandwidth = 3
+
+#create the nilpotent matrix
+nilp = smg2s.NilpotencyInt()
+
+#setup the nilpotent matrix: 2 = continous 1 nb, 10 = matrix size
+nilp.NilpType1(2,10)
+
+if rank == 0:
+        print("Nilptency matrix continuous one nb = %d" %nilp.nbOne)
+
+Mt = smg2s.parMatrixSparseDoubleInt()
+
+#Generate Mt by SMG2S
+#vector.txt is the file that stores the given spectral distribution in local filesystem.
+Mt=smg2s.smg2sDoubleInt(10,nilp,lbandwidth,"vector.txt", MPI.COMM_WORLD)</code></pre>
+
+                    </div>
+
+
+                    <div class="row"">
+                        <div class="col-sm-12 features section-description">
+                            <h3 id="intPETSc">Interface to PETSc</h3>
+                        </div>
+                    </div>
+                    <div class="row row-centered">
+                    <div class="col-sm-12" style = " padding-left: 20%; padding-right: 20%">
+
+                        <p align="left">Include header file</p>
+
+<pre align="left"><code>#include &ltinterface/PETSc/petsc_interface.h&gt</code></pre>
+
+                        <p align="left">Create parMatrixSparse type matrix : </p>
+
+<pre align="left"><code>parMatrixSparse&ltstd::complex&ltdouble&gt,int&gt *Mt;</code></pre>
+
+                        <p align="left"> Restore this matrix into CSR format : </p>
+
+<pre align="left"><code>Mt->Loc_ConvertToCSR();</code></pre>
+
+                        <p align="left">Create PETSc MAT type : </p>
+
+<pre align="left"><code>MatCreate(PETSC_COMM_WORLD,&A); </code></pre>
+
+                        <p align="left">Convert to PETSc MAT format : </p>
+
+<pre align="left"><code>A = ConvertToPETSCMat(Mt); </code></pre>
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-12 features section-description">
+                            <h3 id="intTrilinos">Interface to Trilinos</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12" style = " padding-left: 20%; padding-right: 20%">
+                        <p align="left">Include header file</p>
+
+
+
+<pre align="left"><code>#include &ltinterface/Trilinos/trilinos_interface.hpp&gt</code></pre>
+
+                        <p align="left">Create parMatrixSparse type matrix : </p>
+
+<pre align="left"><code>parMatrixSparse&ltstd::complex&ltdouble&gt,int&gt *Mt;</code></pre>
+
+                        <p align="left">Create Trilinos/Teptra MAT type : </p>
+
+<pre align="left"><code>RCP&ltCrsMatrix&ltScalarType&gt &gt K ; </code></pre>
+
+                        <p align="left">Convert to Trilinos MAT format : </p>
+
+<pre align="left"><code>K = ConvertToTrilinosMat(Mt); </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 footer-copyright">
+                        Edit in  <a href="maisondelasimulation.html">Maison de la Simulation</a> by <a href="https://brunowu.github.io/">Mr. Xinzhe Wu</a>
+                    </div>
+                    <div class="col-sm-12 footer-copyright">
+                        <a href="credit.html">Attribution</a> - Designed by Quentin Petit
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
